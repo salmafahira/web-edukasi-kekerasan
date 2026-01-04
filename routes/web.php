@@ -1,12 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 Route::get('/user', function () {
     return view('user.home');
-});
-
-Route::get('/profil', function () {
-    return view('user.profil');
 });
 
 /* ======================
