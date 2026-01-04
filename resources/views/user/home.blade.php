@@ -162,10 +162,10 @@ function toggleMenu() {
         </div>
 
         <ul class="cta-list">
-            <li>Tetap tenang dan jaga keselamatan diri</li>
-            <li>Ceritakan kepada orang terpercaya</li>
-            <li>Cari bantuan dari layanan yang tersedia</li>
-        </ul>
+    <li><span>Tetap tenang dan jaga keselamatan diri</span></li>
+    <li><span>Ceritakan kepada orang terpercaya</span></li>
+    <li><span>Cari bantuan dari layanan yang tersedia</span></li>
+</ul>
 
         <a href="{{ url('/chatbot') }}" class="cta-btn">
             BERTANYA KE CHATBOT
@@ -181,56 +181,63 @@ function toggleMenu() {
 <footer class="footer-new">
     <div class="footer-wave"></div>
 
-    <div class="footer-wrapper">
-        <div class="footer-container">
-
-            <!-- KIRI -->
-            <div class="footer-left">
-                <div class="footer-logo">
-                    <img src="{{ asset('images/logo.png') }}" alt="DP2KBP3A">
-                    <div>
-                        <strong>DP2KBP3A</strong><br>
-                        <span>Kabupaten Bandung Barat</span>
-                    </div>
-                </div>
-
-                <div class="footer-info">
-                    <p>
-                        <strong>Alamat:</strong><br>
-                        Komplek Pemda Kabupaten Bandung Barat<br>
-                        Jl. Raya Padalarang–Cisarua Km.2<br>
-                        Ngamprah
-                    </p>
-
-                    <p>
-                        <strong>Jam Operasional:</strong><br>
-                        08.00 – 16.30
-                    </p>
+    <div class="footer-container">
+        <!-- KIRI -->
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="{{ asset('images/logo.png') }}" alt="DP2KBP3A">
+                <div class="footer-logo-text">
+                    <strong>DP2KBP3A</strong>
+                    <span>Kabupaten Bandung Barat</span>
                 </div>
             </div>
+<div class="footer-info">
+    <div class="footer-info-item">
+        <img src="{{ asset('images/icon-lokasi.png') }}" alt="Alamat">
+        <div>
+            <p><strong>Alamat:</strong></p>
+            <p>
+                Komplek Pemda Kabupaten Bandung Barat<br>
+                Jl. Raya Padalarang–Cisarua Km.2<br>
+                Ngamprah
+            </p>
+        </div>
+    </div>
 
-            <!-- KANAN -->
-            <div class="footer-right">
-                <h4>Tautan</h4>
-                <a href="#">Tentang Kami</a><br>
+    <div class="footer-info-item">
+        <img src="{{ asset('images/icon-jam.png') }}" alt="Jam Operasional">
+        <div>
+            <p><strong>Jam Operasional:</strong></p>
+            <p>08.00 – 16.30</p>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+        <!-- KANAN -->
+        <div class="footer-right">
+            <h4>Tautan</h4>
+
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a>
                 <a href="#">Website Pelaporan</a>
-
-                <div class="footer-social">
-                    <a href="#"><img src="{{ asset('images/icon-instagram.png') }}"></a>
-                    <a href="#"><img src="{{ asset('images/icon-facebook.png') }}"></a>
-                    <a href="#"><img src="{{ asset('images/icon-whatsapp.png') }}"></a>
-                    <a href="#"><img src="{{ asset('images/icon-email.png') }}"></a>
-                </div>
             </div>
 
+            <div class="footer-social">
+                <a href="#"><img src="{{ asset('images/icon-instagram.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ asset('images/icon-facebook.png') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ asset('images/icon-whatsapp.png') }}" alt="WhatsApp"></a>
+                <a href="#"><img src="{{ asset('images/icon-email.png') }}" alt="Email"></a>
+            </div>
         </div>
     </div>
 
     <div class="footer-bottom">
-        © Platform Edukasi Perlindungan Perempuan dan Anak
+        © Platform Edukasi Kekerasan terhadap Perempuan dan Anak
     </div>
 </footer>
-
 
 
 </body>
