@@ -226,7 +226,7 @@ function toggleMenu() {
             </div>
 
             <div class="footer-social">
-                <a href="#"><img src="{{ asset('images/icon-instagram.png') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ asset('images/logo-instagram.png') }}" alt="Instagram"></a>
                 <a href="#"><img src="{{ asset('images/icon-facebook.png') }}" alt="Facebook"></a>
                 <a href="#"><img src="{{ asset('images/icon-whatsapp.png') }}" alt="WhatsApp"></a>
                 <a href="#"><img src="{{ asset('images/icon-email.png') }}" alt="Email"></a>
