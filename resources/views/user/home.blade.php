@@ -25,7 +25,15 @@
     <div class="menu" id="navMenu">
         <a href="{{ url('/user') }}" class="{{ request()->is('/user') ? 'active' : '' }}">Beranda</a>
         <a href="{{ url('/profil') }}" class="{{ request()->is('profil') ? 'active' : '' }}">Profil</a>
-        <a href="{{ url('/materi') }}" class="{{ request()->is('materi*') ? 'active' : '' }}">Materi</a>
+        <div class="menu-dropdown {{ request()->is('materi*') ? 'active' : '' }}">
+    <span class="dropdown-toggle">Materi ▾</span>
+
+    <div class="dropdown-menu">
+        <a href="{{ url('/materi/artikel') }}">Artikel Edukasi</a>
+        <a href="{{ url('/materi/kategori') }}">Kategori Edukasi</a>
+    </div>
+</div>
+
         <a href="{{ url('/chatbot') }}" class="{{ request()->is('chatbot') ? 'active' : '' }}">Chatbot</a>
     </div>
 
@@ -149,7 +157,20 @@
 function toggleMenu() {
     document.getElementById('navMenu').classList.toggle('show');
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdown = document.querySelector('.menu-dropdown');
+    const toggle = document.querySelector('.dropdown-toggle');
+
+    if (toggle) {
+        toggle.addEventListener('click', function () {
+            dropdown.classList.toggle('open');
+        });
+    }
+});
+
 </script>
+
+
 
 <!-- CTA SIKAP DAN LANGKAH AMAN -->
 <section class="cta-aman">

@@ -59,6 +59,88 @@ body{
     font-weight: 1000;
 }
 
+/* DROPDOWN MENU */
+.menu-dropdown {
+    position: relative;
+    font-weight: 850;
+    cursor: pointer;
+}
+
+.menu-dropdown .dropdown-toggle {
+    color: #333;
+    padding: 8px 4px;
+    display: inline-block;
+}
+
+.menu-dropdown.active .dropdown-toggle {
+    color: #3a6bff;
+}
+
+/* submenu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 130%;
+    left: 0;
+    background: #ffffff;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    padding: 8px 0;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column; /* vertikal */
+}
+
+/* item submenu */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    margin: 4px 10px;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #f2f4ff;
+    color: #3a6bff;
+}
+
+/* tampil saat hover (desktop) */
+.menu-dropdown.open .dropdown-menu {
+    display: block;
+}
+
+/*RESPONSIVE DROPDOWN SUB MENU*/
+@media (max-width: 768px) {
+    .menu-dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background: transparent;
+        box-shadow: none;
+        margin-top: 6px;
+        width: 100%;
+        padding: 0;
+    }
+    .dropdown-menu a {
+        margin: 4px 0;
+    }
+
+    .menu-dropdown:hover .dropdown-menu {
+        display: none;
+    }
+
+    .menu-dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
+
 
 /* HAMBURGER */
 .menu-toggle {
@@ -767,6 +849,8 @@ body{
         display: flex;
     }
 }
+
+
 
 /* RESPONSIVE ARTIKEL */
 @media (max-width: 992px) {
