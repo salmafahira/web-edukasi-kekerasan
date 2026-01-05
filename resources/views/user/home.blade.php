@@ -23,7 +23,7 @@
     </div>
 
     <div class="menu" id="navMenu">
-        <a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">Beranda</a>
+        <a href="{{ url('/user') }}" class="{{ request()->is('/user') ? 'active' : '' }}">Beranda</a>
         <a href="{{ url('/profil') }}" class="{{ request()->is('profil') ? 'active' : '' }}">Profil</a>
         <a href="{{ url('/materi') }}" class="{{ request()->is('materi*') ? 'active' : '' }}">Materi</a>
         <a href="{{ url('/chatbot') }}" class="{{ request()->is('chatbot') ? 'active' : '' }}">Chatbot</a>

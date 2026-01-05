@@ -1,0 +1,85 @@
+/* HEADER */
+.profil-header {
+    padding: 10px 80px 30px;
+    text-decoration: underline;
+    color: #3a3a8f;
+}
+
+.profil-header h1 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3a3a8f;
+    margin-left: 50px;
+}
+
+/* BANNER */
+.profil-banner {
+    background: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profil-banner img {
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 12px;
+}
+
+/* DESKRIPSI */
+.profil-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.profil-content p {
+    margin-bottom: 20px;
+}
+
+/* VISI MISI */
+.visi-misi {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.visi-misi h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #333;
+}
+
+.visi blockquote {
+    margin-top: 16px;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* MISI LIST */
+.misi ol {
+    margin-top: 16px;
+    padding-left: 20px;
+}
+
+.misi li {
+    margin-bottom: 14px;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .profil-header {
+        padding: 40px 24px 20px;
+    }
+
+    .profil-header h1 {
+        font-size: 26px;
+    }
+}
